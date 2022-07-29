@@ -82,6 +82,14 @@ def FizzBuzz():
 #FizzBuzz()
 
 #To get the positive numbers in a mix list of string, positive and negative numbers.
+list = ["bikash",-2, -3, 4, 5, -6, 7]
+for i in range (0, len(list)):
+    a = list[i]
+    
+
+    
+
+
 
 
 
