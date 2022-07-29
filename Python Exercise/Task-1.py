@@ -59,7 +59,38 @@ def countVowels():
         if letter.lower() in vowel:
             c += 1
     print("vowels: ",c)
-countVowels() 
+#countVowels() 
+
+#From numbers 1 to 100, print "Fizz" if it is multiple of 3 and "Buzz" if it is multiple of 5, "FizzBuzz" if it is multipleof both 3 and 5.
+def FizzBuzz():
+    a = []
+    b = []
+    c = []
+    for x in range(1,101):
+        if x%3==0: 
+            a.append(x)
+        elif x%5 == 0:
+            b.append(x)
+
+        if x%3 == 0 and x%5==0:
+            c.append(x)
+
+    print("Fizz numbers are: ",a)
+    print("Buzz numbers are: ",b)
+    print("FizzBuzz numbers are: ",c)
+
+#FizzBuzz()
+
+#To get the positive numbers in a mix list of string, positive and negative numbers.
+
+
+
+
+
+
+
+
+
 
 
  
