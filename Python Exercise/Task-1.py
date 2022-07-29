@@ -12,7 +12,7 @@ def checkPalindrome():
     else:
         print(f"{anyString} is not a palindrome.")
 
-checkPalindrome()
+#checkPalindrome()
 
 
 #To check whether a number is prime number or not.
@@ -29,7 +29,7 @@ def checkPrime():
     else:
         print("It is composite number")
 
-checkPrime()
+#checkPrime()
 
 
 #To convert a matrix: [[1,2],[3,4],[5,6],[7,8]] into [[1,2,3,5,7],[2,4,6,8]]
@@ -38,5 +38,36 @@ def transpose_matrix():
     transposed = [[row[i] for row in matrix1] for i in range (len(matrix1[0]))]
     print(transposed)
 
-transpose_matrix()
+#transpose_matrix()
+
+#To count vowels in a string of input. [Using list comprehension]
+
+#Own Logic 
+# string = input("Enter any string: ")
+# c = 0
+# for i in range (0,len(string)):
+#     a = string[i].upper()
+#     if a =="A" or a =="E" or a =="I" or a =="O" or a == "U":
+#         c = c + 1 
+# print("Number of vowels:",c)
+
+def countVowels():
+    vowel = ['a','e','i','o','u']
+    string = input("Enter any string: ")
+    c = 0
+    for letter in string:
+        if letter.lower() in vowel:
+            c += 1
+    print("vowels: ",c)
+countVowels() 
+
+
+ 
+
+
+
+
+
+
+
 
