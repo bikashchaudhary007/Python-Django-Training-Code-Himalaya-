@@ -1,4 +1,4 @@
-import json
+# import json
 # a = '{"name": "Bikash", "age":"19"}'
 # res = json.loads(a) #converting json to python objects
 # print(res)
@@ -40,10 +40,14 @@ import json
 # # test(**{'a':1})
 # test(5,6,**{'a':1, 'b':2})
 
-def add (*args):
-    sum=0
-    for i in range (0,len(args)):
-        sum = sum + args[i]
-    print(sum)   
-add(1,2,3)
+# def add (*args):
+#     sum=0
+#     for i in range (0,len(args)):
+#         sum = sum + args[i]
+#     print(sum)   
+# add(1,2,3)
 
+
+li = ['abc', 'def', 'ghi']
+a = list(map(list,li))
+print(a)
