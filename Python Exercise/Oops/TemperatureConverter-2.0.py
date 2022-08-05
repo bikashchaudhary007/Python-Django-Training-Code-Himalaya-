@@ -33,10 +33,27 @@ class TemperatureConverter():
         print(f'The converted temperature value:\n {kelvin_val} K = {celsius_val} degree celsius')
 
 
-TemperatureConverter.celsius_to_fahrenheit()
-TemperatureConverter.fahrenheit_to_celsius()
-TemperatureConverter.celsius_to_kelvin()
-TemperatureConverter.kelvin_to_celsius()
+print("This is a simple python program that converts the temperature.")
+def choose_temperature():
+    choosed_tem = input("Follow the given below instruction:\n celcius_to_fareheit type 'C' \n farenheit_to_celcius type 'F' \n celsius_to_kelvin type 'CK' \n kelvin_to_celsius 'KC': ")
+    if choosed_tem.upper()== 'C':
+        TemperatureConverter.celsius_to_fahrenheit()
+    elif choosed_tem.upper()== 'F':
+        TemperatureConverter.fahrenheit_to_celsius()
+    elif choosed_tem.upper()== 'CK':
+        TemperatureConverter.celsius_to_kelvin()
+    
+    elif choosed_tem.upper()== 'KC':
+        TemperatureConverter.kelvin_to_celsius()
+    else:
+        print("Please choose the Temperature to be changed.")
+    
+
+choose_temperature()
+# TemperatureConverter.celsius_to_fahrenheit()
+# TemperatureConverter.fahrenheit_to_celsius()
+# TemperatureConverter.celsius_to_kelvin()
+# TemperatureConverter.kelvin_to_celsius()
 
 
         
